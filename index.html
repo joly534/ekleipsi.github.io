@@ -3,21 +3,22 @@
         <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     </head>
     <body>
-        <a-scene background="color: darkgrey">
+        <a-scene  loading-screen="dotsColor: red; background="color: darkgrey">
 
             <assets>
                 <img id="sol" src="assets/textures/sol_marbre.jpg">
                 <img id="wall" src="assets/textures/wall.jpg">
+                <a-asset-item id="oculus_go" src="assets/obj/controllers/oculus_go/oculus-go-controller.gltf"></a-asset-item>
             </assets>
 
             <a-light light="type: spot; color: white; castShadow:true" position="-3.5 2 -5" intensity="0.1"></a-light>
             <a-light light="type: spot; color: white; castShadow:true" position="3.5 2 -5" intensity="0.1"></a-light>
-            <a-light light="type: spot; color: white; castShadow:true" position="-3.5 2 -3" intensity="0.2"></a-light>
-            <a-light light="type: spot; color: white; castShadow:true" position="3.5 2 -3" intensity="0.2"></a-light>
-            <a-light light="type: spot; color: white; castShadow:true" position="-3.5 2 -1" intensity="0.3" ></a-light>
-            <a-light light="type: spot; color: white; castShadow:true" position="3.5 2 -1" intensity="0.3" castShadow:true></a-light>
-            <a-light light="type: spot; color: white; castShadow:true" position="-3.5 2 4" intensity="0.3" castShadow:true></a-light>
-            <a-light light="type: spot; color: white; castShadow:true" position="3.5 2 4" intensity="0.3" castShadow:true></a-light>
+            <a-light light="type: spot; color: white; castShadow:true" position="-3.5 2 -3" intensity="0.3"></a-light>
+            <a-light light="type: spot; color: white; castShadow:true" position="3.5 2 -3" intensity="0.3"></a-light>
+            <a-light light="type: spot; color: white; castShadow:true" position="-3.5 2 -1" intensity="0.4"></a-light>
+            <a-light light="type: spot; color: white; castShadow:true" position="3.5 2 -1" intensity="0.4"></a-light>
+            <a-light light="type: spot; color: white; castShadow:true" position="-3.5 2 -4" intensity="0.2"></a-light>
+            <a-light light="type: spot; color: white; castShadow:true" position="3.5 2 -4" intensity="0.2"></a-light>
 
             <!--SOL ET PLAFOND-->
             <a-plane color="white" height="8" width="15" position="0 0 -4" rotation="-90 0 90" src="#sol" repeat="10 10" shadow="receive:true"></a-plane>
@@ -37,13 +38,14 @@
             mtl="assets/obj/monster/Hellknight_LATEST.mtl" 
             position="0 1 -5" scale="0.7 0.7 0.7" shadow="cast: true"></a-obj-model>
 
-            <a-obj-model src="assets/obj/controllers/oculus-touch-controller-left.obj" 
-                        mtl="assets/obj/controllers/controllers/oculus-touch-controller-left.mtl" 
+            <a-obj-model src="/assets/obj/controllers/oculus-touch-controller-left.obj" 
+                        mtl="/assets/obj/controllers/controllers/oculus-touch-controller-left.mtl" 
                         position="-1 0 -3" scale="1 1 1"></a-obj-model>
 
             <a-obj-model src="assets/obj/controllers/oculus-touch-controller-right.obj" 
             mtl="assets/obj/controllers/controllers/oculus-touch-controller-right.mtl" 
             position="1 0 -3" scale="1 1 1"></a-obj-model>
+            <a-entity gltf-model="#oculus_go" position="0 1 -3"></a-entity>
         </a-scene>
     </body>
 </html>
