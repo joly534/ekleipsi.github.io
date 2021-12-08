@@ -36,32 +36,11 @@
             <a-obj-model src="assets/obj/monster/Hellknight_LATEST.obj" 
             mtl="assets/obj/monster/Hellknight_LATEST.mtl" 
             position="0 1.4 -5" scale="1 1 1" shadow="cast: true"></a-obj-model>
-
-            <a-entity oculus-touch-controls="hand: left" thumbstick-logging></a-entity>
-            <a-entity oculus-touch-controls="hand: right" thumbstick-logging></a-entity>
-
-            <script>
-
-                AFRAME.registerComponent('thumbstick-logging',{
-                    init: function () {
-                      this.el.addEventListener('thumbstickmoved', this.logThumbstick);
-                    },
-                    logThumbstick: function (evt) {
-                      if (evt.detail.y > 0.95) { console.log("DOWN"); }
-                      if (evt.detail.y < -0.95) { console.log("UP"); }
-                      if (evt.detail.x < -0.95) { console.log("LEFT"); }
-                      if (evt.detail.x > 0.95) { console.log("RIGHT"); }
-                    }
-                  });
-                  
-            </script>
             <a-obj-model src="/assets/obj/controllers/oculus-touch-controller-left.obj" 
-                        mtl="/assets/obj/controllers/controllers/oculus-touch-controller-left.mtl" 
-                        position="-1 0 -3" scale="1 1 1"></a-obj-model>
+                        mtl="/assets/obj/controllers/controllers/oculus-touch-controller-left.mtl"></a-obj-model>
 
             <a-obj-model src="assets/obj/controllers/oculus-touch-controller-right.obj" 
-            mtl="assets/obj/controllers/controllers/oculus-touch-controller-right.mtl" 
-            position="1 0 -3" scale="1 1 1"></a-obj-model>
+            mtl="assets/obj/controllers/controllers/oculus-touch-controller-right.mtl"></a-obj-model>
         </a-scene>
     </body>
 </html>
