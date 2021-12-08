@@ -10,14 +10,14 @@
                 <img id="wall" src="assets/textures/wall.jpg">
             </assets>
 
-            <a-light light="type: spot; color: white; castShadow:true" position="-3.5 2 -5" intensity="0.1"></a-light>
-            <a-light light="type: spot; color: white; castShadow:true" position="3.5 2 -5" intensity="0.1"></a-light>
-            <a-light light="type: spot; color: white; castShadow:true" position="-3.5 2 -3" intensity="0.3"></a-light>
-            <a-light light="type: spot; color: white; castShadow:true" position="3.5 2 -3" intensity="0.3"></a-light>
-            <a-light light="type: spot; color: white; castShadow:true" position="-3.5 2 -1" intensity="0.4"></a-light>
-            <a-light light="type: spot; color: white; castShadow:true" position="3.5 2 -1" intensity="0.4"></a-light>
-            <a-light light="type: spot; color: white; castShadow:true" position="-3.5 2 -4" intensity="0.2"></a-light>
-            <a-light light="type: spot; color: white; castShadow:true" position="3.5 2 -4" intensity="0.2"></a-light>
+            <a-light light="type: spot; color: white; castShadow:true" position="-3.5 2 -5" intensity="0.1"rotation="0 -90 0"></a-light>
+            <a-light light="type: spot; color: white; castShadow:true" position="3.5 2 -5" intensity="0.1"rotation="0 90 0"></a-light>
+            <a-light light="type: spot; color: white; castShadow:true" position="-3.5 2 -3" intensity="0.3"rotation="0 -90 0"></a-light>
+            <a-light light="type: spot; color: white; castShadow:true" position="3.5 2 -3" intensity="0.3"rotation="0 90 0"></a-light>
+            <a-light light="type: spot; color: white; castShadow:true" position="-3.5 2 -1" intensity="0.4"rotation="0 -90 0"></a-light>
+            <a-light light="type: spot; color: white; castShadow:true" position="3.5 2 -1" intensity="0.4"rotation="0 90 0"></a-light>
+            <a-light light="type: spot; color: white; castShadow:true" position="-3.5 2 -4" intensity="0.2"rotation="0 -90 0"></a-light>
+            <a-light light="type: spot; color: white; castShadow:true" position="3.5 2 -4" intensity="0.2"rotation="0 90 0"></a-light>
 
             <!--SOL ET PLAFOND-->
             <a-plane color="white" height="8" width="15" position="0 0 -4" rotation="-90 0 90" src="#sol" repeat="10 10" shadow="receive:true"></a-plane>
@@ -37,11 +37,11 @@
             mtl="assets/obj/monster/Hellknight_LATEST.mtl" 
             position="0 1.4 -5" scale="1 1 1" ></a-obj-model>
 
-            <!-- <a-obj-model src="/assets/obj/controllers/oculus-touch-controller-left.obj" 
-                        mtl="/assets/obj/controllers/controllers/oculus-touch-controller-left.mtl"></a-obj-model>
+            <a-obj-model src="/assets/obj/controllers/oculus-touch-controller-left.obj" 
+                        mtl="/assets/obj/controllers/controllers/oculus-touch-controller-left.mtl" model="true" position=" 0 1 -3"></a-obj-model>
 
             <a-obj-model src="assets/obj/controllers/oculus-touch-controller-right.obj" 
-            mtl="assets/obj/controllers/controllers/oculus-touch-controller-right.mtl"></a-obj-model> -->
+            mtl="assets/obj/controllers/controllers/oculus-touch-controller-right.mtl" model="true"></a-obj-model>
         </a-scene>
     </body>
 </html>
